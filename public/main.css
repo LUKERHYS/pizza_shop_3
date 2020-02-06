@@ -1,34 +1,12 @@
+/* GLOBAL CHANGES */
 body {
   margin: 0;
   background-color: #f1f1f1 ;
-  display: flexbox;
-  justify-content: space-around;
 }
-
-main {
-  display: flex;
-  width: 100%;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.order_child {
-  padding: 2%;
-  margin: 4% 3%;
+a {
   font-family: sans-serif;
-  color: #444;
+  text-decoration: none;
 }
-
-.order_child a {
-  color: #444;
-  border: solid;
-  border-color: #446;
-  border-width: 1px;
-  padding: 3px;
-  border-radius: 4px;
-  box-shadow: 0px 3px 5px 0px rgba(176,173,176,1);
-}
-
 ul {
   display: flex;
 }
@@ -37,11 +15,7 @@ li {
   list-style: none;
 }
 
-a {
-  font-family: sans-serif;
-  text-decoration: none;
-}
-
+/* NAVIGATION */
 nav {
   display: flex;
   background-color: #444;
@@ -50,13 +24,67 @@ nav {
  nav a {
    color: #eee;
    font-size: 40px;
-   padding: 10% 0 10% 5%;
+   margin-left: 4%;
  }
 
+/* MAIN_CONTAINER */
+main {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 2% 4%;
+}
 .new_order {
   display: flex;
   padding: 20px;
 }
+
+.order_child {
+  padding: 0 2%;
+  min-width: 20%;
+  font-family: sans-serif;
+  color: #444;
+  border-right: solid #446 1px;
+}
+
+.order_child a {
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 6px;
+  border-radius: 4px;
+  box-shadow: 0px 3px 5px 0px rgba(176,173,176,1);
+  font-size: 18px;
+}
+
+/* SHOW */
+.show_layout {
+  padding: 0 2%;
+  min-width: 20%;
+  font-family: sans-serif;
+  color: #444;
+  border-right: solid #446 1px;
+}
+
+.show_layout a {
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 6px;
+  border-radius: 4px;
+  box-shadow: 0px 3px 5px 0px rgba(176,173,176,1);
+  font-size: 18px;
+}
+
+.delete {
+  background: red;
+  border-radius: 6px;
+  padding: 3%;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* FORMS */
 
 label {
   font-family: sans-serif;

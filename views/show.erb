@@ -1,15 +1,12 @@
-<p>First Name: <%= @order.first_name %></p>
-<p>Last Name: <%= @order.last_name %></p>
-<p>Topping: <%= @order.topping %></p>
-<p>Quantity: <%= @order.quantity %></p>
+<div class="show_layout">
+<h3>First Name: </h3><p> <%= @order.first_name %></p>
+<h3>Last Name: </h3><p><%= @order.last_name %></p>
+<h3>Topping: </h3><p><%= @order.topping %></p>
+<h3>Quantity:</h3><p> <%= @order.quantity %></p>
 
-<form action="/pizza-orders/<%= @order.id %>/update" method="get">
-  <input type="submit" value="Update Order">
-
-</form>
+<a href="/pizza-orders/<%= @order.id %>/update" method="get">Update Order</a>
 
 <form action="/pizza-orders/<%= @order.id %>/delete" method="post">
-  <input type="submit" value="Cancel Order"/>
-
-
+  <input class="delete" type="submit" value="Cancel Order"/>
 </form>
+</div>
