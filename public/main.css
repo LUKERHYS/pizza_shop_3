@@ -94,3 +94,10 @@ label {
 input {
 
 }
+
+/* NEW ORDER FORM */
+.new_order {
+  display: flex;
+  justify-content: center;
+  max-width: 33%;
+}
